@@ -6,14 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "secure-server": "node server/secure-server.js",
+    "vuln-server": "node server/vulnerable-server.js",
+    "gen-certs": "bash scripts/generate-certs.sh"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "lucide-react": "^1.7.0",
     "next": "16.2.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
